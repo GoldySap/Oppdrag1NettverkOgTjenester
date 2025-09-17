@@ -1,13 +1,20 @@
 # Nettverk og Tjenester - Oppdrag 1, 2IMI Uke 38 2025
 ## Nettverk og tilkobling
-Først koblet jeg pcen og Rasberry Pien til klassens LAN nettverket med navn 2IMI - passord IMKuben1337!
+Først koblet jeg Rasberry Pien til nettverket: __Kuben.it__ - passord: `IMKuben1337!`
 Så satt jeg Rasberry Pien: 
 * Statisk IP av 10.200.14.20
 * Nettmask (subnet mask) til 255.0.0.0
 * Gateway til 10.0.0.1
 * DNS til 10.0.0.10
 
-Etter det testet jeg å pinge Pien fra PCen
+<img width="50%" height="50%" alt="Screenshot From 2025-09-16 10-38-12" src="https://github.com/user-attachments/assets/d2a1268c-8296-42a3-bea1-15bbcb3a8016" />
+
+Så brukte jeg `ip a` kommandoen i terminalen for å skjekke Rasberry Pien sin IP
+
+<img width="50%" height="50%" alt="Screenshot From 2025-09-17 11-49-28" src="https://github.com/user-attachments/assets/f8d90908-10ec-40be-b208-94650265caab" />
+
+
+Etter det testet jeg å pinge Rasberry Pien fra PCen får å verifisere tilkoblingen og feilsøke om jeg skrev noe feil.
 
 <img width="50%" height="50%" alt="image" src="https://github.com/user-attachments/assets/f92b3026-5aea-42a7-a041-de10a5bc8495" />
 
