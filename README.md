@@ -9,14 +9,24 @@ Etter det testet jeg å pinge Pien fra PCen
 Jeg startet med å updatere filene mine og installere apace2/verifisere at jeg har apache2.
 bilde
 
-Så oppdaterte jeg brannmuren til å tilate apache serveren
+Så oppdaterte jeg brannmuren til å tilate apache serveren.
 bilde
 
 Til slutt la jeg til min egen netside som apache skal kjøre og testet apache serveren med å få tilgang til nettsiden, med å skrive IPen 10.200.14.20 og få min nettside.
 <img width="1909" height="1058" alt="image" src="https://github.com/user-attachments/assets/a58d36c3-e4eb-4b83-9c3d-c15219a559f5" />
 
+Etter å få resultatet valgte jeg å laste ned samba.
+
+Får at folderen skal deles må jeg legge til: 
+
+I konfigen
+<img width="1844" height="484" alt="Screenshot From 2025-09-17 09-46-19" src="https://github.com/user-attachments/assets/b60e659f-9e25-4422-89f2-526ae2fd022b" />
+
+Til slutt la jeg til en test fil og fikk sambashare folderen til å dele.
+<img width="1154" height="861" alt="image" src="https://github.com/user-attachments/assets/17a9dac7-5394-435f-b951-b9edf6056b3d" />
 
 
 ## Python og github
 Først lagde jeg en github og klonet den til pcen min.
 Så lagde jeg en python fil som skal ...
+Klonet den til Rasberry Pien og testet at den funket:
