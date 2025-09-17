@@ -1,11 +1,11 @@
 # Nettverk og Tjenester - Oppdrag 1, 2IMI Uke 38 2025
 ## Nettverk og tilkobling
 Først koblet jeg Rasberry Pien til nettverket: __Kuben.it__ - passord: `IMKuben1337!`
-Så satt jeg Rasberry Pien: 
-* Statisk IP av 10.200.14.20
-* Nettmask (subnet mask) til 255.0.0.0
-* Gateway til 10.0.0.1
-* DNS til 10.0.0.10
+Så konfigurerte jeg Rasberry Pien: 
+* Statisk IP: 10.200.14.20
+* Nettmask (subnet mask): 255.0.0.0
+* Gateway: 10.0.0.1
+* DNS: 10.0.0.10
 
 <img width="50%" height="50%" alt="Screenshot From 2025-09-16 10-38-12" src="https://github.com/user-attachments/assets/d2a1268c-8296-42a3-bea1-15bbcb3a8016" />
 
@@ -26,6 +26,7 @@ Så oppdaterte jeg brannmuren til å tilate apache serveren.
 bilde
 
 Til slutt la jeg til min egen netside som apache skal kjøre og testet apache serveren med å få tilgang til nettsiden, med å skrive IPen 10.200.14.20 og få min nettside.
+
 <img width="50%" height="50%" alt="image" src="https://github.com/user-attachments/assets/a58d36c3-e4eb-4b83-9c3d-c15219a559f5" />
 
 Etter å få resultatet valgte jeg å laste ned samba.
