@@ -1,7 +1,8 @@
 # Nettverk og Tjenester - Oppdrag 1, 2IMI Uke 38 2025
 ## Nettverk og tilkobling
 Først koblet jeg Rasberry Pien til nettverket: __Kuben.it__ - passord: `IMKuben1337!`
-Så konfigurerte jeg Rasberry Pien: 
+
+Så konfigurerte jeg wifi settings til Rasberry Pien: 
 * Statisk IP: 10.200.14.20
 * Nettmask (subnet mask): 255.0.0.0
 * Gateway: 10.0.0.1
@@ -50,7 +51,15 @@ Til slutt la jeg til en test fil og fikk sambashare folderen til å dele.
 
 ## Python og github
 Først lagde jeg en github og klonet den til pcen min.
-Så lagde jeg en python fil som skal hvise system detaljer, som type system, version, cpu detaljer, uptime, etc. Så klonet jeg reposetorien til Rasberry Pien og testet at python filenfunket.
+Så lagde jeg en python fil som skal vise system detaljer, som type system, version, cpu detaljer, uptime, etc.
+
+Dette krevde at jeg lastet ned psutil på Rasberry Pien og Pcen 
+
+<img width="50%" height="50%" alt="image" src="https://github.com/user-attachments/assets/05357697-1ce9-4abe-a0fc-a915806621bd" />
+
+
+
+Så klonet jeg reposetorien til Rasberry Pien og testet at python filenfunket.
 
 Koden:
 ```Python
