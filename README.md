@@ -21,16 +21,28 @@ Etter det testet jeg å pinge Rasberry Pien fra PCen får å verifisere tilkobli
 
 ## Server og tjenester
 Jeg startet med å updatere filene mine og installere apace2/verifisere at jeg har apache2.
-bilde
+
+<img width="50%" height="50%" alt="Screenshot From 2025-09-17 09-08-20" src="https://github.com/user-attachments/assets/5502a4a3-b33a-4da2-acad-170b60933d86" />
+
 
 Så oppdaterte jeg brannmuren til å tilate apache serveren.
-bilde
+
+<img width="50%" height="50%" alt="image" src="https://github.com/user-attachments/assets/7e41328b-dce9-4fbc-96c8-5666a7d1b4e0" />
+
 
 Til slutt la jeg til min egen netside som apache skal kjøre og testet apache serveren med å få tilgang til nettsiden, med å skrive IPen 10.200.14.20 og få min nettside.
 
+<img width="1036" height="68" alt="image" src="https://github.com/user-attachments/assets/f68ed281-b005-4978-83ca-ddc3d66b68a8" />
+
+
 <img width="50%" height="50%" alt="image" src="https://github.com/user-attachments/assets/a58d36c3-e4eb-4b83-9c3d-c15219a559f5" />
 
+---
+
 Etter å få resultatet valgte jeg å laste ned samba.
+
+<img width="50%" height="50%" alt="Screenshot From 2025-09-17 09-24-11" src="https://github.com/user-attachments/assets/9ad02424-cdb3-413a-ad38-78fc8ffdde8b" />
+
 
 Får at folderen skal deles må jeg legge til: 
 ```
@@ -57,9 +69,12 @@ Dette krevde at jeg lastet ned psutil på Rasberry Pien og Pcen
 
 <img width="50%" height="50%" alt="image" src="https://github.com/user-attachments/assets/05357697-1ce9-4abe-a0fc-a915806621bd" />
 
-
+<img width="790" height="207" alt="Screenshot From 2025-09-17 10-58-14" src="https://github.com/user-attachments/assets/e02691d0-947d-49b0-a039-1f224d2ccd21" />
 
 Så klonet jeg reposetorien til Rasberry Pien og testet at python filenfunket.
+
+<img width="1854" height="1048" alt="Screenshot From 2025-09-17 11-12-01" src="https://github.com/user-attachments/assets/bc3e300c-afff-4585-aaf5-c87a0c627407" />
+
 
 Koden:
 ```Python
