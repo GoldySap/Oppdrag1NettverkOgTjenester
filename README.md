@@ -38,7 +38,7 @@ Til slutt la jeg til min egen netside som apache skal kjøre og testet apache se
 <img width="50%" height="50%" alt="image" src="https://github.com/user-attachments/assets/a58d36c3-e4eb-4b83-9c3d-c15219a559f5" />
 
 ---
-
+### Samba
 Etter å få resultatet valgte jeg å laste ned samba.
 
 <img width="50%" height="50%" alt="Screenshot From 2025-09-17 09-24-11" src="https://github.com/user-attachments/assets/9ad02424-cdb3-413a-ad38-78fc8ffdde8b" />
@@ -69,11 +69,11 @@ Dette krevde at jeg lastet ned psutil på Rasberry Pien og Pcen
 
 <img width="50%" height="50%" alt="image" src="https://github.com/user-attachments/assets/05357697-1ce9-4abe-a0fc-a915806621bd" />
 
-<img width="790" height="207" alt="Screenshot From 2025-09-17 10-58-14" src="https://github.com/user-attachments/assets/e02691d0-947d-49b0-a039-1f224d2ccd21" />
+<img width="50%" height="50%" alt="Screenshot From 2025-09-17 10-58-14" src="https://github.com/user-attachments/assets/e02691d0-947d-49b0-a039-1f224d2ccd21" />
 
 Så klonet jeg reposetorien til Rasberry Pien og testet at python filenfunket.
 
-<img width="1854" height="1048" alt="Screenshot From 2025-09-17 11-12-01" src="https://github.com/user-attachments/assets/bc3e300c-afff-4585-aaf5-c87a0c627407" />
+<img width="50%" height="50%" alt="Screenshot From 2025-09-17 11-12-01" src="https://github.com/user-attachments/assets/bc3e300c-afff-4585-aaf5-c87a0c627407" />
 
 
 Koden:
