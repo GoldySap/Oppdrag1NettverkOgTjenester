@@ -15,22 +15,45 @@ Så brukte jeg `ip a` kommandoen i terminalen for å skjekke Rasberry Pien sin I
 <img width="50%" height="50%" alt="Screenshot From 2025-09-17 11-49-28" src="https://github.com/user-attachments/assets/f8d90908-10ec-40be-b208-94650265caab" />
 
 
-Etter det testet jeg å pinge Rasberry Pien fra PCen får å verifisere tilkoblingen og feilsøke om jeg skrev noe feil.
+Etter det testet jeg å pinge Rasberry Pien, med `ping 10.200.14.20` kommandoen, fra PCen får å verifisere tilkoblingen og feilsøke om jeg skrev noe feil.
 
 <img width="50%" height="50%" alt="image" src="https://github.com/user-attachments/assets/f92b3026-5aea-42a7-a041-de10a5bc8495" />
 
 ## Server og tjenester
-Jeg startet med å updatere filene mine og installere apace2/verifisere at jeg har apache2.
+Jeg startet med å updatere filene mine og installere apache2/verifisere at jeg har apache2.
+Kommandoer:
+```
+sudo apt update
+sudo apt install apache2
+sudo ufw app list
+```
 
 <img width="50%" height="50%" alt="Screenshot From 2025-09-17 09-08-20" src="https://github.com/user-attachments/assets/5502a4a3-b33a-4da2-acad-170b60933d86" />
 
 
 Så oppdaterte jeg brannmuren til å tilate apache serveren.
+Kommandoer:
+```
+sudo ufw allow Apache
+```
 
 <img width="50%" height="50%" alt="image" src="https://github.com/user-attachments/assets/7e41328b-dce9-4fbc-96c8-5666a7d1b4e0" />
 
 
 Til slutt la jeg til min egen netside som apache skal kjøre og testet apache serveren med å få tilgang til nettsiden, med å skrive IPen 10.200.14.20 og få min nettside.
+Kommandoer for å starte apache serveren:
+```
+sudo systemctl status apache2
+sudo systemctl enable apache2
+```
+Kommandoer for å legge til nettsiden i apache, Username endres til maskin brukernavnet og nettside endres til nettside mappen, I mitt tillfelde er Username: alexsi og min nettsidemappe: TheTerminal_WebVersion_NoButtons_02:
+```
+cd .. #til du er ute av user og home directorien.
+sudo mv ~/nettside/* /var/www/html/
+cd /var/www/html
+ls #til å sjekke om overføringen funket
+sudo rm -r ~/nettside
+```
 
 <img width="1036" height="68" alt="image" src="https://github.com/user-attachments/assets/f68ed281-b005-4978-83ca-ddc3d66b68a8" />
 
