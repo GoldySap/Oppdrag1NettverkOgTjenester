@@ -119,6 +119,15 @@ Dette krevde at jeg lastet ned psutil på Rasberry Pien og Pcen
 <img width="50%" height="50%" alt="Screenshot From 2025-09-17 10-58-14" src="https://github.com/user-attachments/assets/e02691d0-947d-49b0-a039-1f224d2ccd21" />
 
 Så klonet jeg reposetorien til Rasberry Pien og testet at python filenfunket.
+kommandoer for å clone repositorien og oppdatere den med de nyeste filene i repositorien:
+```
+git clone github_url
+git fetch
+git pull
+```
+
+<img width="50%" height="50%" alt="image" src="https://github.com/user-attachments/assets/949622e5-8cba-4964-8ec3-6fdd678149dd" />
+
 
 <img width="50%" height="50%" alt="Screenshot From 2025-09-17 11-12-01" src="https://github.com/user-attachments/assets/bc3e300c-afff-4585-aaf5-c87a0c627407" />
 
