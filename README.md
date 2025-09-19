@@ -31,11 +31,7 @@ sudo ufw app list
 <img width="50%" height="50%" alt="Screenshot From 2025-09-17 09-08-20" src="https://github.com/user-attachments/assets/5502a4a3-b33a-4da2-acad-170b60933d86" />
 
 
-Så oppdaterte jeg brannmuren til å tilate apache serveren.
-Kommandoer:
-```
-sudo ufw allow Apache
-```
+Så oppdaterte jeg brannmuren til å tilate apache serveren med `sudo ufw allow Apache` komandoen.
 
 <img width="50%" height="50%" alt="image" src="https://github.com/user-attachments/assets/7e41328b-dce9-4fbc-96c8-5666a7d1b4e0" />
 
@@ -63,11 +59,23 @@ sudo rm -r ~/nettside
 ---
 ### Samba
 Etter å få resultatet valgte jeg å laste ned samba.
+Kommandoer for samba nedlastning:
+```
+sudo apt update
+sudo apt install samba -y
+sudo systemctl status smbd
+sudo mkdir -p ~/sambashare
+```
 
 <img width="50%" height="50%" alt="Screenshot From 2025-09-17 09-24-11" src="https://github.com/user-attachments/assets/9ad02424-cdb3-413a-ad38-78fc8ffdde8b" />
 
 
-Får at folderen skal deles må jeg legge til: 
+Får at folderen skal deles må jeg opne konfigurasions filen med:
+```
+cd /etc/samba/smb.conf
+nano smb.conf
+```
+og legge til denne teksten i konfigurationsfilen: 
 ```
 [sambashare]
   comment = Samba on Ubuntu
@@ -75,11 +83,12 @@ Får at folderen skal deles må jeg legge til:
   read only = no
   browsable = yes
 ```
-I konfigurations filen, lagre, og restarte samba med `Sudo service smdb restart` Eller `Sudo systemctl smbd restart` kommandoene.
 
 <img width="50%" height="50%" alt="Screenshot From 2025-09-17 09-46-19" src="https://github.com/user-attachments/assets/b60e659f-9e25-4422-89f2-526ae2fd022b" />
 
-Til slutt la jeg til en test fil og fikk sambashare folderen til å dele.
+Så må jeg lagre filen og restarte samba med `Sudo service smdb restart` eller `Sudo systemctl smbd restart` kommandoene.
+
+Til slutt la jeg til en test fil og fikk sambashare folderen til å dele med å skrive //10.200.14.20/sambashare..
 
 <img width="50%" height="50%" alt="image" src="https://github.com/user-attachments/assets/17a9dac7-5394-435f-b951-b9edf6056b3d" />
 
@@ -94,7 +103,7 @@ Dette krevde at jeg lastet ned psutil på Rasberry Pien og Pcen
 
 <img width="50%" height="50%" alt="Screenshot From 2025-09-17 10-58-14" src="https://github.com/user-attachments/assets/e02691d0-947d-49b0-a039-1f224d2ccd21" />
 
-Så klonet jeg reposetorien til Rasberry Pien og testet at python filenfunket.
+Så klonet jeg reposetorien, med `git clone` kommandoen, til Rasberry Pien og testet at python filenfunket.
 
 <img width="50%" height="50%" alt="Screenshot From 2025-09-17 11-12-01" src="https://github.com/user-attachments/assets/bc3e300c-afff-4585-aaf5-c87a0c627407" />
 
