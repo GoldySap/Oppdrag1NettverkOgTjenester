@@ -51,7 +51,7 @@ ls #til å sjekke om overføringen funket
 sudo rm -r ~/nettside
 ```
 
-<img width="1036" height="68" alt="image" src="https://github.com/user-attachments/assets/f68ed281-b005-4978-83ca-ddc3d66b68a8" />
+<img width="50%" height="50%" alt="image" src="https://github.com/user-attachments/assets/f68ed281-b005-4978-83ca-ddc3d66b68a8" />
 
 
 <img width="50%" height="50%" alt="image" src="https://github.com/user-attachments/assets/a58d36c3-e4eb-4b83-9c3d-c15219a559f5" />
