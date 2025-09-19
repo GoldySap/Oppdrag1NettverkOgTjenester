@@ -103,9 +103,13 @@ Kommandoene får å commite endringene er:
 ```
 git add navn #erstatt navn med fillen eller forlderen du vill adde til commiten.
 git add . #adder alt i directorien med repositorien til commiten
-git commite -m "navn på endringen" #commiter endringene å med ett navn som man velger selv
-git push -u origin main #sendercommiten til github repositoriet
+git commit -m "navn på endringen" #commiter endringene å med ett navn som man velger selv
+git push #
+git push -u origin main #sender commiten spesefikt til github repositoriet origin main branch
 ```
+
+<img width="917" height="987" alt="image" src="https://github.com/user-attachments/assets/3dedbca6-6a16-4a2b-a07e-a40f9fe1ba73" />
+
 Så lagde jeg en python fil som skal vise system detaljer, som type system, version, cpu detaljer, uptime, etc.
 
 Dette krevde at jeg lastet ned psutil på Rasberry Pien og Pcen 
