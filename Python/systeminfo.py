@@ -1,4 +1,4 @@
-import platform
+import platform 
 import psutil
 
 print(f"System: {platform.system()}")
@@ -24,7 +24,7 @@ print(f"Total swap memory: {swap_mem.total / (1024**3):.2f} GB")
 print(f"Used swap memory: {swap_mem.used / (1024**3):.2f} GB")
 print(f"Swap memory usage percentage: {swap_mem.percent}%")
 
-disk_usage = psutil.disk_usage('/') # Replace '/' with the desired path for other drives
+disk_usage = psutil.disk_usage('/')
 print(f"Total disk space: {disk_usage.total / (1024**3):.2f} GB")
 print(f"Used disk space: {disk_usage.used / (1024**3):.2f} GB")
 print(f"Free disk space: {disk_usage.free / (1024**3):.2f} GB")
