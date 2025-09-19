@@ -65,6 +65,7 @@ sudo apt update
 sudo apt install samba -y
 sudo systemctl status smbd
 sudo mkdir -p ~/sambashare
+sudo ufw allow samba
 ```
 
 <img width="50%" height="50%" alt="Screenshot From 2025-09-17 09-24-11" src="https://github.com/user-attachments/assets/9ad02424-cdb3-413a-ad38-78fc8ffdde8b" />
@@ -94,7 +95,17 @@ Til slutt la jeg til en test fil og fikk sambashare folderen til å dele med å 
 
 
 ## Python og github
-Først lagde jeg en github og klonet den til pcen min.
+Først lagde jeg en github repository og klonet den til pcen min, med `git clone` kommandoen.
+Du kan også lage en repository ved å bruke med `git init` kommandoen til å skape en repository in mappen.
+så gå på github å lage en repository der.
+og koble git repositorien til github repositorien med `git remote add origin github_url`, der du erstatter github_url med lenken til github repositoriet.
+Kommandoene får å commite endringene er:
+```
+git add navn #erstatt navn med fillen eller forlderen du vill adde til commiten.
+git add . #adder alt i directorien med repositorien til commiten
+git commite -m "navn på endringen" #commiter endringene å med ett navn som man velger selv
+git push -u origin main #sendercommiten til github repositoriet
+```
 Så lagde jeg en python fil som skal vise system detaljer, som type system, version, cpu detaljer, uptime, etc.
 
 Dette krevde at jeg lastet ned psutil på Rasberry Pien og Pcen 
@@ -103,7 +114,7 @@ Dette krevde at jeg lastet ned psutil på Rasberry Pien og Pcen
 
 <img width="50%" height="50%" alt="Screenshot From 2025-09-17 10-58-14" src="https://github.com/user-attachments/assets/e02691d0-947d-49b0-a039-1f224d2ccd21" />
 
-Så klonet jeg reposetorien, med `git clone` kommandoen, til Rasberry Pien og testet at python filenfunket.
+Så klonet jeg reposetorien til Rasberry Pien og testet at python filenfunket.
 
 <img width="50%" height="50%" alt="Screenshot From 2025-09-17 11-12-01" src="https://github.com/user-attachments/assets/bc3e300c-afff-4585-aaf5-c87a0c627407" />
 
